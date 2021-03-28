@@ -281,7 +281,7 @@ client.on('ready', () => {
             featureDir: 'src/cmd/',
             showWarns: false,
         })
-        .setMongoPath(client.config.bot.connections.mongoose)
+        .setMongoPath(process.env.MONGOOS)
         .setDefaultPrefix(client.config.bot.setting.main_prefix)
 })
 client.on('voiceStateUpdate', (oldMember, newMember) => {
