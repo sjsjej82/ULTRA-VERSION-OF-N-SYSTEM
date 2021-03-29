@@ -1,7 +1,7 @@
 {
     "dev": {
-        "owner_id": [""],
-        "support": "",
+        "owner_id": ["732250742416474172"],
+        "support": "https://discord.com/invite/YJ6mUdgTsc",
         "website": ""
     },
     "bot": {
@@ -10,7 +10,7 @@
             "yt_api": ""
         },
         "setting": {
-            "main_prefix": ""
+            "main_prefix": "="
         }
     }
 }
