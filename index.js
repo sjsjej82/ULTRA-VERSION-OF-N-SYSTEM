@@ -274,6 +274,7 @@ String.prototype.replaceAll = function(search, replacement) {
     var target = this;
     return target.split(search).join(replacement);
 };
+process.env.MONGOOSES = client.config.bot.connections.mongoose
 const WOKCommands = require('wokcommands')
 client.on('ready', () => {
     new WOKCommands(client, {
@@ -281,7 +282,7 @@ client.on('ready', () => {
             featureDir: 'src/cmd/',
             showWarns: false,
         })
-        .setMongoPath(client.config.bot.connections.mongoose)
+        .setMongoPath(process.env.MONGOOSES)
         .setDefaultPrefix(client.config.bot.setting.main_prefix)
 })
 client.on('voiceStateUpdate', (oldMember, newMember) => {
